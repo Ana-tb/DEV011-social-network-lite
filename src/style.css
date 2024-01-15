@@ -6,7 +6,7 @@ body {
   
   header {
     background-repeat: no-repeat;
-    background-color: #EE9966;
+    background-color: black;
     height: 70px;
     width: 100%;
     position: fixed;
@@ -38,7 +38,7 @@ body {
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
     font-family: 'Lato', sans-serif;
-    background: #EBE9E9;
+    background: black;
     border: 20px;
     border-radius: 15px;
     margin: 5px;

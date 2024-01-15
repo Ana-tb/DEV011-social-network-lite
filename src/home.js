@@ -9,7 +9,7 @@ function home(navigateTo) {
     navigateTo('/login');
   });
 
-  title.textContent = 'SocialNetwork';
+  title.textContent = 'Ilustrare';
 
   section.append(title, button);
   return section;
