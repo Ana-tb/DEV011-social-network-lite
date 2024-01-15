@@ -16,3 +16,5 @@ const walls = () => {
     console.log('funciona el click', comment);
   });
 };
+
+export default walls;
