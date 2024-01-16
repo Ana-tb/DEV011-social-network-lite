@@ -70,6 +70,7 @@ export const register = (email, password) => {
   } else {
     users.push({ email, password });
     localStorage.setItem('users', JSON.stringify(users));
+    
     return true;
   }
 };

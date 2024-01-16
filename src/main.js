@@ -1,21 +1,20 @@
 // file main.js finished
-import home from './home.js';
-import login from './login.js';
-import error from './error.js';
-import register from '/register.js';
-import walls from './walls.js';
+import home from "./home.js";
+import inicioSesion from "./login.js";
+import error from "./error.js";
+import registro from "/register.js";
+import walls from "./walls.js";
 
 const routes = [
-  { path: '/', component: home },
-  { path: '/login', component: login },
-  { path: '/error', component: error },
-  { path: '/register', component: register },
-  { path: '/walls', component: walls },
-
+  { path: "/", component: home },
+  { path: "/login", component: inicioSesion },
+  { path: "/error", component: error },
+  { path: "/register", component: registro },
+  { path: "/walls", component: walls },
 ];
 
-const defaultRoute = '/';
-const root = document.getElementById('root');
+const defaultRoute = "/";
+const root = document.getElementById("root");
 
 function navigateTo(hash) {
   const route = routes.find((routeFound) => routeFound.path === hash);
@@ -24,7 +23,7 @@ function navigateTo(hash) {
     window.history.pushState(
       {},
       route.path,
-      window.location.origin + route.path,
+      window.location.origin + route.path
     );
 
     if (root.firstChild) {
@@ -32,7 +31,7 @@ function navigateTo(hash) {
     }
     root.appendChild(route.component(navigateTo));
   } else {
-    navigateTo('/error');
+    navigateTo("/error");
   }
 }
 
