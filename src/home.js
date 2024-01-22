@@ -1,8 +1,8 @@
 // archivo main.js finished
 function home(navigateTo) {
   const section = document.createElement("section");
-  const title = document.createElement("h2");
-  title.textContent = "Ilustrare";
+  const title = document.createElement("h1");
+  title.textContent = "Artie";
 
   const button = document.createElement("button");
   button.textContent = "login";

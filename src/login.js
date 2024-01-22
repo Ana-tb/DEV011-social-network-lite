@@ -2,7 +2,7 @@ import { login } from "./lib/services";
 // file login finished
 function inicioSesion(navigateTo) {
   const section = document.createElement("section");
-  const title = document.createElement("h2");
+  const title = document.createElement("h1");
   const buttonReturn = document.createElement("button");
   const form = document.createElement("form");
   const inputEmail = document.createElement("input");
@@ -15,7 +15,7 @@ function inicioSesion(navigateTo) {
   title.textContent = "Login";
   buttonLogin.textContent = "go";
   buttonLogin.addEventListener("click", (e) => {
-    e.preventDefault() 
+    e.preventDefault();
     const callback = login(inputEmail.value, inputPass.value);
     if (callback == true) {
       navigateTo("/walls");

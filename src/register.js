@@ -2,7 +2,7 @@ import { register } from "./lib/services";
 // file login finished
 function registro(navigateTo) {
   const section = document.createElement("section");
-  const title = document.createElement("h2");
+  const title = document.createElement("h1");
   const buttonReturn = document.createElement("button");
   const form = document.createElement("form");
   const inputEmail = document.createElement("input");
@@ -21,7 +21,6 @@ function registro(navigateTo) {
       alert("Usuario registrado");
       navigateTo("/login");
     }
-
   });
 
   buttonReturn.textContent = "Return to home";
