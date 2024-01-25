@@ -5,15 +5,60 @@ body {
   background-color: black;
 }
 
+#sectionWall{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
 h1,
 h3 {
+  display: flex;
+  flex-wrap: wrap;
   color: #a32cdf;
   font-weight: bold;
   font-size: 24px;
   margin-top: 0;
   margin-bottom: 20px;
+  align-content: center;
+}
+ul {
+  display: flex;
+  flex-direction: column-reverse;
+  flex-wrap: wrap;
+  list-style-type: none;
+  justify-content: center;
+}
+.publishers {
+  color: black;
+}
+/*Div principal */
+.publish {
+  background-color: white;
+  margin: auto;
+  padding: auto;
+  gap: 10vh;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
 }
 
-.publisher {
-  color: white;
+#inPost {
+  background-color: white;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 10px;
+  padding: 10px;
+  width: 600px;
+}
+#btnSend {
+  background-color: rebeccapurple;
+  display: inline;
+  flex-wrap: wrap;
+  margin: 10px;
+}
+#cerrarSesion {
+  background-color: blanchedalmond
+  display: flex;
+  flex-wrap: wrap;
 }
