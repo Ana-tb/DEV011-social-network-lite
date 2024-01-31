@@ -1,16 +1,19 @@
 // archivo main.js finished
 function home(navigateTo) {
   const section = document.createElement("section");
+  section.id = "homeSection";
   const title = document.createElement("h1");
   title.textContent = "Artie";
 
-  const button = document.createElement("button");
-  button.textContent = "login";
+  const buttonLog = document.createElement("button");
+  buttonLog.textContent = "Iniciar Sesión";
+  buttonLog.id = "btnlogin";
 
   const buttonRegister = document.createElement("button");
   buttonRegister.textContent = "Registro";
+  buttonRegister.id = "btnRegistro";
 
-  button.addEventListener("click", () => {
+  buttonLog.addEventListener("click", () => {
     navigateTo("/login");
   });
 
@@ -18,7 +21,7 @@ function home(navigateTo) {
     navigateTo("/register");
   });
 
-  section.append(title, button, buttonRegister);
+  section.append(title, buttonLog, buttonRegister);
   return section;
 }
 

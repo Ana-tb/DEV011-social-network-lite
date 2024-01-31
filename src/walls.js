@@ -19,8 +19,8 @@ function walls(navigateTo) {
   inputPost.placeholder = "Publica algo";
   //Crea el boton de publicar
   const btnSend = document.createElement("button");
-  btnSend.textContent = "Publicar";
   btnSend.id = "btnSend";
+  btnSend.textContent = "Publicar";
 
   //Crea el espacio para las publicaciones
   const postSetion = document.createElement("article");
